@@ -67,7 +67,7 @@ const generateMessage = (name = "") => {
 const cliName = process.argv.slice(2).join(" ");
 
 if (cliName.trim()) {
-  console.log("=== Mixed Messages ===");
+  console.log("=== Random Order Generator ===");
   console.log(generateMessage(cliName));
 } else {
   const rl = readline.createInterface({
@@ -76,7 +76,7 @@ if (cliName.trim()) {
   });
 
   rl.question("Enter your name (or press Enter to skip): ", (answer) => {
-    console.log("=== Mixed Messages ===");
+    console.log("=== Random Order Generator ===");
     console.log(generateMessage(answer));
     rl.close();
   });
