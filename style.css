@@ -1,13 +1,13 @@
 :root {
-  --bg: #f6f4ef;
-  --surface: #fdfcf8;
-  --text: #11110f;
-  --muted: #5f6059;
-  --line: #ddd8cc;
-  --brand: #0f766e;
-  --brand-2: #d97706;
+  --bg: #fdf6ee;
+  --surface: #fffdf9;
+  --text: #1a0f00;
+  --muted: #7a5c3c;
+  --line: #e8d8c4;
+  --brand: #c0392b;
+  --brand-2: #e67e22;
   --radius: 18px;
-  --shadow: 0 20px 35px rgba(22, 26, 22, 0.12);
+  --shadow: 0 20px 35px rgba(80, 30, 10, 0.13);
 }
 
 * {
@@ -22,8 +22,8 @@ body {
   margin: 0;
   font-family: "Sora", sans-serif;
   background:
-    radial-gradient(circle at 85% 12%, rgba(217, 119, 6, 0.18), transparent 28%),
-    radial-gradient(circle at 12% 88%, rgba(15, 118, 110, 0.2), transparent 24%),
+    radial-gradient(circle at 85% 12%, rgba(230, 126, 34, 0.22), transparent 28%),
+    radial-gradient(circle at 12% 88%, rgba(192, 57, 43, 0.18), transparent 24%),
     var(--bg);
   color: var(--text);
   line-height: 1.65;
@@ -38,8 +38,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 50;
+  -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
-  background: rgba(253, 252, 248, 0.8);
+  background: rgba(255, 251, 245, 0.88);
   border-bottom: 1px solid rgba(221, 216, 204, 0.7);
 }
 
@@ -83,7 +84,7 @@ body {
   left: 0;
   bottom: -6px;
   width: 100%;
-  height: 2px;
+  height: 2.5px;
   background: linear-gradient(90deg, var(--brand), var(--brand-2));
   transform: scaleX(0);
   transform-origin: left;
@@ -131,13 +132,13 @@ body {
 .hero-bg-shape.one {
   top: -150px;
   left: -150px;
-  background: rgba(15, 118, 110, 0.2);
+  background: rgba(192, 57, 43, 0.18);
 }
 
 .hero-bg-shape.two {
   right: -160px;
   bottom: -180px;
-  background: rgba(217, 119, 6, 0.22);
+  background: rgba(230, 126, 34, 0.25);
 }
 
 .hero-grid {
@@ -175,7 +176,7 @@ h2 {
 .lead {
   max-width: 54ch;
   margin: 1rem 0 1.4rem;
-  color: #34362f;
+  color: #5a3010;
 }
 
 .hero-actions {
@@ -190,8 +191,8 @@ h2 {
 
 .btn-primary {
   color: #fff;
-  background: linear-gradient(120deg, var(--brand), #0f172a);
-  box-shadow: 0 10px 20px rgba(15, 118, 110, 0.3);
+  background: linear-gradient(120deg, var(--brand), #8b1a0e);
+  box-shadow: 0 10px 20px rgba(192, 57, 43, 0.32);
 }
 
 .btn-ghost {
@@ -217,6 +218,8 @@ h2 {
 }
 
 .resume-link {
+  display: inline-block;
+  margin-top: 0.5rem;
   font-weight: 700;
   color: var(--brand);
   text-decoration-thickness: 2px;
@@ -236,14 +239,15 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-.project-grid,
-.blog-grid {
+.project-grid {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .blog-grid {
+  display: grid;
+  gap: 1rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -265,8 +269,38 @@ h2 {
 
 .project-card span {
   font-size: 0.85rem;
-  color: var(--muted);
-  font-weight: 600;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-tag {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--brand);
+  background: rgba(192, 57, 43, 0.1);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 1.5rem;
+}
+
+.contact-block {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 0.9rem 1rem;
 }
 
 .message-generator {
@@ -384,7 +418,8 @@ h2 {
 @media (max-width: 960px) {
   .hero-grid,
   .project-grid,
-  .blog-grid {
+  .blog-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
@@ -428,3 +463,4 @@ h2 {
     text-align: center;
   }
 }
+  
