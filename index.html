@@ -3,138 +3,189 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alex Carter | Portfolio</title>
-  <meta name="description" content="Developer portfolio website with projects, blog, and contact section." />
+  <title>Bites & Banter | Takeaway</title>
+  <meta name="description" content="Bites & Banter — a fun takeaway restaurant with randomised order messages, a full menu, and quick delivery." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a href="#home" class="brand">A.C</a>
+      <a href="#home" class="brand">B&amp;B</a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-menu">
         <span></span><span></span><span></span>
       </button>
       <ul id="primary-menu" class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#messages">Messages</a></li>
-        <li><a href="#blog">Blog</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Random Order</a></li>
+        <li><a href="#specials">Specials</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a class="cta-small" href="#contact">Hire Me</a>
+      <a class="cta-small" href="#order">Order Now</a>
     </nav>
   </header>
 
   <main>
+
+    <!-- HERO -->
     <section id="home" class="hero">
       <div class="hero-bg-shape one"></div>
       <div class="hero-bg-shape two"></div>
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Front-End Developer</p>
-          <h1>I design and build websites people remember.</h1>
-          <p class="lead">I turn ideas into high-performance web experiences with strong UI, accessibility, and animation.</p>
+          <p class="eyebrow">Hot food. Fast delivery.</p>
+          <h1>Hungry? Let us decide what you're eating tonight.</h1>
+          <p class="lead">Takeaway done differently. Hit the button, get a random order suggestion, and we'll have it with you in under 30 minutes.</p>
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+            <a href="#order" class="btn btn-primary">🎲 Surprise Me</a>
+            <a href="#menu" class="btn btn-ghost">See the Menu</a>
           </div>
         </div>
-        <aside class="hero-card reveal delay-1" aria-label="Quick profile">
-          <h2>Current Focus</h2>
+        <aside class="hero-card reveal delay-1" aria-label="Today's highlights">
+          <h2>Today's Highlights</h2>
           <ul>
-            <li>Responsive portfolio and business sites</li>
-            <li>JavaScript interactions and animation</li>
-            <li>Performance and accessibility audits</li>
+            <li>🌶️ Spicy Wings — back for a limited time</li>
+            <li>🍔 Double Smash Burger — new on the menu</li>
+            <li>🧋 Bubble Tea — 3 new flavours added</li>
+            <li>🛵 Free delivery on orders over £15</li>
           </ul>
-          <a href="#" class="resume-link">Download CV</a>
+          <a href="#order" class="resume-link">Build your order →</a>
         </aside>
       </div>
     </section>
 
-    <section id="about" class="section container reveal">
-      <p class="eyebrow">About</p>
-      <h2>Developer with a design eye</h2>
-      <p>
-        I enjoy building polished interfaces that are clean, modern, and easy to use.
-        My workflow combines semantic HTML, scalable CSS systems, and JavaScript to keep projects maintainable.
-      </p>
-    </section>
-
-    <section id="projects" class="section container">
+    <!-- MENU -->
+    <section id="menu" class="section container">
       <div class="section-head reveal">
-        <p class="eyebrow">Projects</p>
-        <h2>Selected Work</h2>
+        <p class="eyebrow">Our Menu</p>
+        <h2>What's Cooking</h2>
       </div>
       <div class="project-grid">
         <article class="project-card reveal">
-          <h3>Studio Landing Page</h3>
-          <p>Marketing page with custom motion timeline and conversion-focused layout.</p>
-          <span>HTML • CSS • JS</span>
+          <div class="card-icon">🍔</div>
+          <h3>Burgers</h3>
+          <p>Classic beef, smash, crispy chicken, and loaded veggie burgers, served with seasoned fries.</p>
+          <span>From £6.50</span>
         </article>
         <article class="project-card reveal delay-1">
-          <h3>Course Dashboard</h3>
-          <p>Interactive dashboard with sortable cards, clean components, and fast load times.</p>
-          <span>JavaScript • Charts • A11y</span>
+          <div class="card-icon">🍕</div>
+          <h3>Pizzas</h3>
+          <p>Stone-baked 12-inch pizzas with house sauce, fresh toppings, and extra cheese on request.</p>
+          <span>From £7.99</span>
         </article>
         <article class="project-card reveal delay-2">
-          <h3>Portfolio CMS UI</h3>
-          <p>Admin interface concept for managing blogs, projects, and media assets.</p>
-          <span>UI Design • Front-End</span>
+          <div class="card-icon">🌮</div>
+          <h3>Wraps & Tacos</h3>
+          <p>Grilled meats, house slaw, and signature sauces folded into soft tortillas or crispy taco shells.</p>
+          <span>From £5.50</span>
+        </article>
+        <article class="project-card reveal delay-1">
+          <div class="card-icon">🍜</div>
+          <h3>Noodle Boxes</h3>
+          <p>Wok-tossed noodles with your choice of protein, vegetables, and sauce — sweet, spicy, or smoky.</p>
+          <span>From £7.25</span>
+        </article>
+        <article class="project-card reveal delay-2">
+          <div class="card-icon">🌶️</div>
+          <h3>Wings & Sides</h3>
+          <p>Bone-in wings with 6 sauces, loaded nachos, dirty fries, onion rings, and halloumi bites.</p>
+          <span>From £4.00</span>
+        </article>
+        <article class="project-card reveal delay-3">
+          <div class="card-icon">🍦</div>
+          <h3>Desserts & Drinks</h3>
+          <p>Cookie dough pots, churros, bubble tea, milkshakes, and fresh-squeezed juices.</p>
+          <span>From £3.00</span>
         </article>
       </div>
     </section>
 
-    <section id="messages" class="section container reveal">
-      <p class="eyebrow">Mixed Messages</p>
-      <h2>Random Message Generator</h2>
-      <p>Click generate to get a fresh message each time. Add your name for a personalized version.</p>
-      <div class="message-generator">
-        <label for="visitor-name" class="message-label">Your Name</label>
-        <input id="visitor-name" class="message-input" type="text" placeholder="Type your name" />
-        <div class="message-actions">
-          <button id="generate-message" class="btn btn-primary" type="button">Generate Message</button>
-          <button id="copy-message" class="btn btn-ghost" type="button">Copy Message</button>
-        </div>
-        <pre id="message-output" class="message-output" aria-live="polite">Your random message appears here.</pre>
-        <p id="copy-status" class="copy-status" aria-live="polite"></p>
-      </div>
-    </section>
-
-    <section id="blog" class="section section-alt">
+    <!-- RANDOM ORDER GENERATOR -->
+    <section id="order" class="section section-alt">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">Blog</p>
-          <h2>Latest Notes</h2>
+          <p class="eyebrow">Can't Decide?</p>
+          <h2>Random Order Generator</h2>
+          <p>Tell us your name and hit the button — we'll build you a random order from our menu, complete with a message from the kitchen.</p>
         </div>
-        <div class="blog-grid">
-          <article class="blog-card reveal">
-            <h3>How I build hero sections that convert</h3>
-            <p>Layout strategy, typography contrast, and CTA placement that actually works.</p>
-          </article>
-          <article class="blog-card reveal delay-1">
-            <h3>Simple animation system for static sites</h3>
-            <p>A practical setup for stagger reveals without heavy frameworks.</p>
-          </article>
+        <div class="message-generator reveal delay-1">
+          <label for="visitor-name" class="message-label">Your Name</label>
+          <input id="visitor-name" class="message-input" type="text" placeholder="e.g. Jamie" />
+          <div class="message-actions">
+            <button id="generate-message" class="btn btn-primary" type="button">🎲 Generate My Order</button>
+            <button id="copy-message" class="btn btn-ghost" type="button">📋 Copy Order</button>
+          </div>
+          <pre id="message-output" class="message-output" aria-live="polite">Your random order will appear here...</pre>
+          <p id="copy-status" class="copy-status" aria-live="polite"></p>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section container reveal">
-      <p class="eyebrow">Contact</p>
-      <h2>Let's build your next website</h2>
-      <p>Email: hello@alexcarter.dev</p>
-      <a class="btn btn-primary" href="mailto:hello@alexcarter.dev">Send Message</a>
+    <!-- SPECIALS -->
+    <section id="specials" class="section container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Limited Time</p>
+        <h2>Weekly Specials</h2>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card reveal">
+          <div class="card-icon">🔥</div>
+          <h3>Inferno Challenge Burger</h3>
+          <p>Triple patty, ghost pepper sauce, pickled jalapeños, and Carolina Reaper slaw. Finish it in 5 mins and it's free.</p>
+          <span class="card-tag">This week only — £12.99</span>
+        </article>
+        <article class="blog-card reveal delay-1">
+          <div class="card-icon">🎉</div>
+          <h3>Friday Night Feast Box</h3>
+          <p>Two burgers, a sharing pizza, loaded fries, four wings, two drinks, and a dessert — feeds two.</p>
+          <span class="card-tag">Fridays only — £24.99</span>
+        </article>
+        <article class="blog-card reveal">
+          <div class="card-icon">🥗</div>
+          <h3>Plant-Based Power Bowl</h3>
+          <p>Roasted chickpeas, falafel, charred corn, pickled cabbage, tahini, and house flatbread.</p>
+          <span class="card-tag">Available all week — £8.50</span>
+        </article>
+        <article class="blog-card reveal delay-1">
+          <div class="card-icon">🧋</div>
+          <h3>Boba Bundle</h3>
+          <p>Any two bubble teas — taro, matcha, strawberry, mango, or classic brown sugar — pick your size and toppings.</p>
+          <span class="card-tag">Any 2 for £7.00</span>
+        </article>
+      </div>
     </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container reveal">
+      <p class="eyebrow">Get in Touch</p>
+      <h2>Find Us or Order Direct</h2>
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h3>📍 Address</h3>
+          <p>42 High Street, London, EC1A 1BB</p>
+        </div>
+        <div class="contact-block">
+          <h3>🕐 Opening Hours</h3>
+          <p>Mon–Thu: 11am – 10pm<br />Fri–Sat: 11am – 11pm<br />Sun: 12pm – 9pm</p>
+        </div>
+        <div class="contact-block">
+          <h3>📞 Phone & Email</h3>
+          <p>020 1234 5678<br />hello@bitesbanter.co.uk</p>
+        </div>
+      </div>
+      <a class="btn btn-primary" href="tel:02012345678">📞 Call to Order</a>
+    </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p><span id="year"></span> Alex Carter. All rights reserved.</p>
-      <a href="#home">Back to top</a>
+      <p>© <span id="year"></span> Bites &amp; Banter Takeaway. All rights reserved.</p>
+      <a href="#home">Back to top ↑</a>
     </div>
   </footer>
 
