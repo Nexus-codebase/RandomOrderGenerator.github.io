@@ -1,8 +1,10 @@
-# Mixed Messages — Random Order Generator
+# Random Order Generator — Bites & Banter
 
 A JavaScript program that generates a randomised takeaway order every time it runs, as part of the **Bites & Banter** restaurant site.
 
 Each run picks a random main, side, drink, dessert, estimated delivery time, and a message from the kitchen. Add a name for a personalised order slip.
+
+**Live site:** https://nexus-codebase.github.io/RandomOrderGenerator.github.io/
 
 ## Run (Node.js)
 
